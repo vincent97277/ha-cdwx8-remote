@@ -1,0 +1,4 @@
+homeassistant==2026.10.2
+pytest-homeassistant-custom-component==0.13.373
+aiousbwatcher==1.1.2
+serialx==1.11.0

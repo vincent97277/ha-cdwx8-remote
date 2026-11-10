@@ -14,6 +14,10 @@
 
 每支遙控器提供 A–D 四個事件實體和四個可點按的虛擬按鈕。實體按鍵和 HA 裡的虛擬按鈕會送出同樣的事件，可以共用自動化。適用於已啟用 Bluetooth 整合、且接收器可提供原始 BLE 廣播的 Home Assistant Core 2026.10.2 或更新版本。 [完整安裝指南](docs/installation.md) · [回報問題](https://github.com/vincent97277/ha-cdwx8-remote/issues)
 
+## 開發
+
+修改整合、重跑封包測試或發布版本時，請見 [開發與測試](docs/development.md)。
+
 ## 授權
 
 程式碼與文件採 MIT 授權。圖示使用提供的遙控器照片，照片的權利由原權利人保留。 [MIT License](LICENSE)
