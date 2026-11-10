@@ -1,0 +1,56 @@
+{
+  "entity": {
+    "button": {
+      "press_button": {
+        "name": "按下 {key}"
+      }
+    }
+  },
+  "config": {
+    "flow_title": "{name}",
+    "progress": {
+      "press_key": "請在 30 秒內按一下要新增的 CDWX8 遙控器任一實體按鍵。"
+    },
+    "step": {
+      "user": {
+        "title": "新增久豪 CDWX8 遙控器",
+        "menu_options": {
+          "scan": "按鍵自動偵測",
+          "manual": "手動輸入"
+        }
+      },
+      "bluetooth_ready": {
+        "title": "找到久豪 CDWX8 遙控器",
+        "description": "找到位址為 {address} 的遙控器。繼續後，按一下這支遙控器的任一實體按鍵。"
+      },
+      "scan_timeout": {
+        "title": "未收到可辨識的按鍵廣播",
+        "description": "將遙控器移近藍牙接收器，重新偵測後再按一下。也可以輸入已量測的資料。",
+        "menu_options": {
+          "scan": "重新偵測",
+          "manual": "手動輸入"
+        }
+      },
+      "confirm": {
+        "title": "確認新增遙控器",
+        "description": "已從按鍵廣播讀取 MAC {address} 和 UUID 前綴。確認後新增這支遙控器。"
+      },
+      "manual": {
+        "title": "設定久豪 CDWX8 遙控器",
+        "description": "填入從按鍵廣播量到的六位元組前綴，順序以原始封包為準，例如 01 01 02 03 04 05。",
+        "data": {
+          "address": "藍牙位址（MAC）",
+          "uuid_prefix": "Service UUID 前綴"
+        }
+      }
+    },
+    "error": {
+      "invalid_address": "請輸入六組十六進位位元組，以冒號分隔。",
+      "invalid_prefix": "請輸入六個十六進位位元組，可用空格分隔。"
+    },
+    "abort": {
+      "already_configured": "這支遙控器已設定。",
+      "unsupported_address": "這個掃描器沒有提供遙控器的藍牙 MAC 位址。"
+    }
+  }
+}

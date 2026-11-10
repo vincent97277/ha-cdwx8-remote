@@ -1,0 +1,56 @@
+{
+  "entity": {
+    "button": {
+      "press_button": {
+        "name": "Press {key}"
+      }
+    }
+  },
+  "config": {
+    "flow_title": "{name}",
+    "progress": {
+      "press_key": "Press any physical key on the CDWX8 remote you want to add within 30 seconds."
+    },
+    "step": {
+      "user": {
+        "title": "Add a Jiuhao CDWX8 remote",
+        "menu_options": {
+          "scan": "Detect from a key press",
+          "manual": "Enter details manually"
+        }
+      },
+      "bluetooth_ready": {
+        "title": "Jiuhao CDWX8 remote discovered",
+        "description": "Found a remote at {address}. Continue, then press any physical key on this remote."
+      },
+      "scan_timeout": {
+        "title": "No recognizable key press received",
+        "description": "Move the remote closer to the Bluetooth receiver and press a key after starting a new scan. You can also enter measured values.",
+        "menu_options": {
+          "scan": "Scan again",
+          "manual": "Enter details manually"
+        }
+      },
+      "confirm": {
+        "title": "Confirm remote setup",
+        "description": "Read MAC {address} and the UUID prefix from the key advertisement. Confirm to add this remote."
+      },
+      "manual": {
+        "title": "Set up a Jiuhao CDWX8 remote",
+        "description": "Enter the measured six-byte prefix from a button advertisement. Use the byte order in the raw packet, for example 01 01 02 03 04 05.",
+        "data": {
+          "address": "Bluetooth address (MAC)",
+          "uuid_prefix": "Service UUID prefix"
+        }
+      }
+    },
+    "error": {
+      "invalid_address": "Enter six hexadecimal octets separated by colons.",
+      "invalid_prefix": "Enter exactly six hexadecimal bytes. Spaces are allowed."
+    },
+    "abort": {
+      "already_configured": "This remote is already configured.",
+      "unsupported_address": "This scanner did not provide the remote's Bluetooth MAC address."
+    }
+  }
+}

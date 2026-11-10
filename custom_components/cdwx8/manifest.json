@@ -1,0 +1,13 @@
+{
+  "domain": "cdwx8",
+  "name": "Jiuhao CDWX8 Remote",
+  "bluetooth": [{"connectable": false, "local_name": "cddz.remote.cdwx8"}],
+  "codeowners": ["@vincent97277"],
+  "config_flow": true,
+  "dependencies": ["bluetooth_adapters"],
+  "documentation": "https://github.com/vincent97277/ha-cdwx8-remote/blob/main/docs/installation.md",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/vincent97277/ha-cdwx8-remote/issues",
+  "version": "0.4.1"
+}
